@@ -43,7 +43,12 @@ public class EmployeeController {
     @PutMapping("{id}")
     public ResponseEntity<EmployeeDto> updateEmployee(@PathVariable("id") Long employeeId,
                                                       @RequestBody EmployeeDto updatedEmployee){
+        System.out.println("Controller updateEmployee called with id: " + employeeId);
+
         EmployeeDto employeeDto = employeeService.updateEmployee(employeeId, updatedEmployee);
+
+        System.out.println("Controller returning: " + employeeDto);
+
         return ResponseEntity.ok(employeeDto);
     }
 

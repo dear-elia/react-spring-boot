@@ -8,7 +8,7 @@ public class EmployeeMapper {
         return new EmployeeDto(
                 employee.getId(),
                 employee.getFirstName(),
-                employee.getLastname(),
+                employee.getLastName(),
                 employee.getEmail()
         );
     }

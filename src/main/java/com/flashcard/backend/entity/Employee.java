@@ -23,7 +23,7 @@ public class Employee {
     private String firstName;
 
     @Column(name = "last_name")
-    private String lastname;
+    private String lastName;
 
     @Column(name = "email_id", nullable = false, unique = true)
     private String email;
